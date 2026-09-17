@@ -1,0 +1,63 @@
+Create a multiple-choice quiz about the transcript I'm giving you.
+
+Return ONLY a valid CSV FILE using this header:
+
+Question,Answer 1,Answer 2,Answer 3,Answer 4,Correct,Image,Explanation
+
+Number of answer columns is not necessarily static; depends on the prompt below.
+
+----------------------------------------------------------------------
+General requirements:
+- Give every question exactly four answer choices.
+- Put the correct answer number in the Correct column:
+  1 for Answer 1, 2 for Answer 2, 3 for Answer 3, or 4 for Answer 4.
+- Spread correct answers across different positions.
+- Include only one clearly correct answer per question.
+- Make incorrect answers believable but clearly wrong.
+- Do not repeat questions.
+- Do not generate mistake questions. E.g., what does the ribosome do? Ribosome.
+- Properly quote CSV fields containing commas or quotation marks.
+- Do not add explanations, numbering, notes, markdown, or code fences.
+- Make the result ready to save directly as a .csv file.
+
+- Images are to be added to the CSV under the Image column. For example: image.png
+- Multi-select questions must list the positions of all correct answers in the
+  "Correct" column. Numbering is 1-based and starts with Answer 1. For example:
+  Question,Answer 1, Answer 2, Answer 3, Answer 4, Answer 5,Correct,Image,Explanation
+  Which of these is edible?,Banana,Cake,Crowbar,Microphone,Broccoli,"1,2,5",Only bananas,
+  cake, and broccoli are edible foods.
+- True or false questions generally have only two options, but sometimes can have
+  a third or more options if appropriate in addition to true and false.
+- Image values must be filenames or relative paths from the CSV folder, such as:
+  earth.png
+  images/earth.jpg
+- Do not invent image filenames.
+- If answer or image is unavailable, leave field(s) blank.
+- I have noticed a pattern with AI-generated answers, which is that the longest one
+  tends to be the correct answer. DO NOT DO THIS. Keep answer lengths RANDOM.
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+The following are exceptions for this set. If YES is selected, that thing MUST be included in the produced CSV quiz file.
+- More than four answer choices if appropriate? NO
+- A minority of questions being multi-select questions? YES
+- True or false questions? NO
+- Images for this question set (AI bot must find the images itself)? NO
+- Explanations for why the correct answer is correct? YES
+- Create moderate-length explanation question with info taken from the slides AND
+  supplemented with external resources if needed? YES
+
+- Generate the number of questions necessary to encompass all the topics in this
+  quiz, as in, don't pre specify? NO
+or...
+- Create an exam designed to make me memorize these concepts. However order you
+  deem acceptable, and however number of questions targeting concepts even multiple
+  times. Possibly many more questions if needed. Note: Number of questions could be very large. YES
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Example:
+Question,Answer 1,Answer 2,Answer 3,Answer 4,Correct,Image,Explanation
+Which planet is shown?,Mars,Venus,Earth,Mercury,3,earth.png,Earth is the planet shown in the image.
+Which planet is known for its rings?,Jupiter,Saturn,Uranus,Neptune,2,images/saturn.jpg,Saturn is best known for its large and prominent ring system.
+What is 2 + 2?,3,4,5,6,2,,Adding 2 and 2 gives 4.
