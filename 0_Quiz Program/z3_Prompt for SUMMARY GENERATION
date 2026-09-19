@@ -6,5 +6,6 @@ Clinical disease coverage:
 -Whenever a disease, syndrome, disorder, or clinical condition is mentioned in the provided materials, do not include only the disease name. If the slides or textbook provide additional clinically relevant information, include it. This should include, when available: symptoms, signs, physical exam findings, imaging findings, affected organs/tissues, inheritance pattern, molecular or cellular defect, defective organelle/pathway, and key mechanism.
 -Symptoms are especially important: If symptoms or clinical manifestations are explicitly stated or shown in the slides, textbook text, tables, figures, image labels, or clinical vignettes, they must be included in the notes. Do not omit symptoms in favor of only memorizing the biochemical or cellular defect.
 -If the source provides only organ involvement or a mechanism but no symptoms, state that clearly rather than inventing symptoms from outside knowledge.
--After generating the material, you can go ahead and give me this in a PDF with nice formatting so it doesn't look terrible.
+
+After generating the material, you can go ahead and give me this in a PDF with nice formatting so it doesn't look terrible.
 
