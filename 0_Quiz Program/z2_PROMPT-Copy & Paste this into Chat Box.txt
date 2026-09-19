@@ -4,3 +4,5 @@ Clinical disease questions:
 If a disease or disorder is mentioned, test more than just its name. When available in the provided materials, include symptoms, signs, organ involvement, inheritance, cellular/molecular defect, affected organelle/pathway, and mechanism. Make sure symptoms and clinical presentations are tested with some vignette-style questions. Do not invent symptoms that are not supported by the source.
 
 I have noticed a pattern with AI-generated answers, which is that the longest one tends to be the correct answer. DO NOT DO THIS. Keep answer lengths RANDOM.
+
+When creating the Explanation section for each question explaining why the correct answer is correct, you can use information from the material I provide AND from external resources in order to ensure that the info provided in the Explanation is well rounded and comprehensible. Ensure that this is the case for ALL explanations.
